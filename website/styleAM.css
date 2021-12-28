@@ -23,7 +23,6 @@ canvas {
 }
 #myName {
   color: rgb(0, 0, 0);
-  /* outline: 1px solid rgb(95, 63, 153); */
   text-shadow: 2px 2px rgb(22, 227, 167);
 }
 /* @keyframes animationname {keyframes-selector {css-styles;}} */
@@ -108,9 +107,10 @@ canvas {
   color: rgb(255, 112, 166);
 }
 /* figure out how to make this move */
-#family {
-  position: absolute;
-  top: 500px;
+#funFacts {
+  position: relative;
+  top: 910px;
+  left: 5px;
 }
 #hr4 {
   border: none;
@@ -126,4 +126,31 @@ canvas {
   padding: 0 4px;
   position: relative;
   top: -13px;
+}
+#conciseDescriptHeader {
+  position: relative;
+  left: 6px;
+  font-size: 27px;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px rgb(22, 227, 167);
+}
+#numbering {
+  color: rgb(255, 105, 51);
+  font-family: humanoidFont;
+  font-size: 40px;
+}
+@font-face {
+  font-family: humanoidFont;
+  src: url(assets/humanoidFont/HUMANOIDSTRAIGHT.TTF);
+}
+#conciseDescript {
+  border-radius: 20px;
+  border: 5px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+  position: relative;
+  top: -13px;
+}
+#facts {
+  font-size: 20px;
+  color: rgb(255, 112, 166);
 }
