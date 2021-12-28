@@ -1,3 +1,3 @@
 # whitneysArchive
 Stuff that is important to me. 
-whitneysArchive/website/index.html
+https://wsprung.github.io/whitneysArchive/website/index.html
