@@ -11,6 +11,7 @@ canvas {
   border: 5px solid rgb(22, 227, 167);
   left: 5px;
   top: 5px;
+  animation: borderChange 5s infinite;
 }
 #selfPortraitLabel {
   position: absolute;
@@ -19,6 +20,16 @@ canvas {
   color: rgb(255, 105, 51);
   left: 184px;
   top: 760px;
+}
+#myName {
+  color: rgb(0, 0, 0);
+  /* outline: 1px solid rgb(95, 63, 153); */
+  text-shadow: 2px 2px rgb(22, 227, 167);
+}
+/* @keyframes animationname {keyframes-selector {css-styles;}} */
+/* https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp */
+@keyframes borderChange {
+  50% {border: 5px solid rgb(95, 63, 153);}
 }
 #intro {
   position: absolute;
@@ -73,6 +84,7 @@ canvas {
   position: absolute;
   border-radius: 20px;
   border: 5px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
 }
 #hr3 {
   border: none;

@@ -7,6 +7,7 @@ canvas {
 }
 #buttons {
   background-color: rgb(121, 250, 197);
+  visibility: hidden;
   text-align: center;
 }
 #aboutMe {
@@ -31,7 +32,6 @@ canvas {
 }
 #archiveHeader {
   font-size: 35px;
-  display: center;
   border: 2px solid rgb(142, 199, 255);
 }
 #hiToUser {
