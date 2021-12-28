@@ -13,3 +13,7 @@ https://www.plus2net.com/html_tutorial/button-linking.php
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text
 
 https://www.w3schools.com/jsref/met_document_createtextnode.asp
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area
+
+https://developer.mozilla.org/en-US/docs/Glossary/Empty_element

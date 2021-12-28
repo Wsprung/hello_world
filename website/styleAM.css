@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+#selfPortrait {
+  position: absolute;
+  border-radius: 20px;
+  border: 5px solid rgb(22, 227, 167);
+  left: 5px;
+  top: 5px;
+}
+#selfPortraitLabel {
+  position: absolute;
+  font-size: 20px;
+  border: 2px solid rgb(95, 63, 153);
+  color: rgb(255, 105, 51);
+  left: 184px;
+  top: 760px;
+}
+#intro {
+  position: absolute;
+  top: -10px;
+  left: 525px;
+}
+#headerIntro {
+  font-size: 30px;
+  color: rgb(255, 105, 51);
+}
+#p1 {
+  font-size: 23px;
+  color: rgb(255, 112, 166);
+}
+#hr1 {
+  border: none;
+  border-top: 5px double;
+  color: rgb(95, 63, 153);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+#hr1:after {
+  background: #fff;
+  content: '§' ;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+#hr2 {
+  border: none;
+  border-top: 5px double;
+  color: rgb(95, 63, 153);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+#hr2:after {
+  background: #fff;
+  content: '§' ;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+#p2 {
+  font-size: 23px;
+  color: rgb(0, 206, 241);
+}
+#dogs {
+  position: absolute;
+  border-radius: 20px;
+  border: 5px solid rgb(22, 227, 167);
+}
+#hr3 {
+  border: none;
+  border-top: 5px double;
+  color: rgb(95, 63, 153);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+#hr3:after {
+  background: #fff;
+  content: '§' ;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+#doggyP {
+  position: absolute;
+  left: 520px;
+  font-size: 23px;
+  color: rgb(255, 112, 166);
+}
+/* figure out how to make this move */
+#family {
+  position: absolute;
+  top: 500px;
+}
+#hr4 {
+  border: none;
+  border-top: 5px double;
+  color: rgb(95, 63, 153);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+#hr4:after {
+  background: #fff;
+  content: '§' ;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
