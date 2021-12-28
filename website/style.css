@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+#buttons {
+  background-color: rgb(121, 250, 197);
+  text-align: center;
+}
+#aboutMe {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+#myWork {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+#myMusic {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+#food {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+}
+#header {
+  /* display: none hides the element */
+  text-align: center;
+}
+#archiveHeader {
+  font-size: 35px;
+  display: center;
+  border: 2px solid rgb(142, 199, 255);
+}
+#hiToUser {
+  background-color: black;
+  position: absolute;
+  text-align: center;
+  display: none;
+  color: rgb(142, 199, 255);
+  font-family: myFirstFont;
+  font-size: 60px;
+}
+#welcomeUser {
+  background-color: black;
+  position: absolute;
+  display: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: rgb(121, 250, 197);
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/humanoidFont/HUMANOIDSTRAIGHT.TTF);
+}

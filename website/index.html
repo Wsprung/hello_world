@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+
+    <div id = "buttons">
+      <!-- <input type = button onClick="parent.location='index.html'"
+ value='About Me'>  -->
+       <input type = "button" id = "aboutMe" onClick="parent.location='aboutMe.html'" value='About Me'>
+       <input type = "button" id = "myWork" onClick="parent.location='aboutMe.html'" value='My Work'>
+       <input type = "button" id = "myMusic" onClick="parent.location='aboutMe.html'" value='My Music'>
+       <input type = "button" id = "food" onClick="parent.location='aboutMe.html'" value='My Food'>
+    </div>
+    <div id = "header">
+      <h1 id = "archiveHeader">Whitney's Archive</h1>
+    </div>
+    <div id="sketch-container">
+      <div id = "textInBox">
+          <label for = "usersName">Enter your name:</label> <!--br produces a line break -->
+          <input type = "text" id = "usersName" name = "usersName">
+          <input type = "button" id = "enterName" onClick = "printName()" value = 'enter'>
+
+            <script>
+            //javaScript function with <script> element
+              function printName() {
+                let name = document.getElementById('usersName').value;
+
+                document.getElementById('hiToUser').innerHTML = "Hi " + name + "!";
+                document.getElementById('textInBox').style.display = "none";
+
+                var currElement1 = document.getElementById('hiToUser');
+                var currElement2 = document.getElementById('welcomeUser');
+                moveIntoTextBox(currElement1, currElement2);
+            }
+            //figure out how to wrap text into box
+              function moveIntoTextBox(element1, element2) {
+                document.getElementById('hiToUser').style.display = "inline";
+                document.getElementById('welcomeUser').style.display = "inline";
+
+                element1.style.top = "350px";
+                element1.style.left = "260px";
+
+                element2.style.top = "430px";
+                element2.style.left = "260px";
+              }
+            </script>
+      </div>
+      <h1 id = hiToUser></h1>
+      <h2 id = welcomeUser>Welcome to my archive. <br> Click around to learn more about me!</h2>
+    </div>
+
+</body></html>
