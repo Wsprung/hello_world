@@ -10,17 +10,18 @@
 
     <div id = "buttons">
       <!-- add grades page, resume page, and "time capsule" page -->
-       <input type = "button" id = "aboutMe" onClick="parent.location='aboutMe.html'" value='About Me'>
-       <input type = "button" id = "myWork" onClick="parent.location='aboutMe.html'" value='My Work'>
-       <input type = "button" id = "myMusic" onClick="parent.location='aboutMe.html'" value='My Music'>
-       <input type = "button" id = "food" onClick="parent.location='aboutMe.html'" value='My Food'>
+       <input type = "button" id = "buttonDesign" onClick="parent.location='aboutMe/aboutMe.html'" value='About Me'>
+       <input type = "button" id = "buttonDesign" onClick="parent.location='myWork/index.html'" value='My Work'>
+       <input type = "button" id = "buttonDesign" onClick="parent.location='myMusic/index.html'" value='My Music'>
+       <input type = "button" id = "buttonDesign" onClick="parent.location='myFood/index.html'" value='My Food'>
+       <input type = "button" id = "buttonDesign" onClick="parent.location='myAccolades/index.html'" value='My Accolades'>
     </div>
     <div id = "header">
       <h1 id = "archiveHeader">Whitney's Archive</h1>
     </div>
     <div id="sketch-container">
       <div id = "textInBox">
-          <label for = "usersName">Enter your name:</label> <!--br produces a line break -->
+          <label for = "usersName" id = "labelUsersName">What's your name?:</label> <!--br produces a line break -->
           <input type = "text" id = "usersName" name = "usersName">
           <input type = "button" id = "enterName" onClick = "printName()" value = 'enter'>
 
@@ -42,10 +43,10 @@
                 document.getElementById('welcomeUser').style.display = "inline";
                 document.getElementById('buttons').style.visibility = "visible";
 
-                element1.style.top = "350px";
+                element1.style.top = "440px";
                 element1.style.left = "260px";
 
-                element2.style.top = "430px";
+                element2.style.top = "540px";
                 element2.style.left = "260px";
               }
             </script>

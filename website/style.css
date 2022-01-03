@@ -10,21 +10,9 @@ canvas {
   visibility: hidden;
   text-align: center;
 }
-#aboutMe {
+#buttonDesign {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 20px;
-}
-#myWork {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 20px;
-}
-#myMusic {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 20px;
-}
-#food {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 20px;
+  font-size: 25px;
 }
 #header {
   /* display: none hides the element */
@@ -32,7 +20,38 @@ canvas {
 }
 #archiveHeader {
   font-size: 35px;
-  border: 2px solid rgb(142, 199, 255);
+  border: 4px solid rgb(121, 250, 197);
+  font-family: stereofidelic;
+  font-size: 70px;
+  background-color: rgb(142, 199, 255);
+}
+#enterName {
+  position: relative;
+  top: -10px;
+  font-size: 20px;
+  color: rgb(142, 199, 255);
+  background-color: black;
+  font-family: monospace;
+}
+#textInBox {
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+#usersName {
+  position: relative;
+  top: -10px;
+  font-size: 20px;
+  background-color: rgb(121, 250, 197);
+  border: 4px solid rgb(142, 199, 255);
+}
+#labelUsersName {
+  position: relative;
+  top: -10px;
+  font-size: 25px;
+  font-family: monospace;
+  background-color: rgb(121, 250, 197);
+  border: 4px solid rgb(142, 199, 255);
 }
 #hiToUser {
   background-color: black;
@@ -40,7 +59,7 @@ canvas {
   text-align: center;
   display: none;
   color: rgb(142, 199, 255);
-  font-family: myFirstFont;
+  font-family: Courier;
   font-size: 60px;
 }
 #welcomeUser {
@@ -53,4 +72,12 @@ canvas {
 @font-face {
   font-family: myFirstFont;
   src: url(assets/humanoidFont/HUMANOIDSTRAIGHT.TTF);
+}
+@font-face {
+  font-family: robotica;
+  src: url(assets/robotica/ROBOTICA.TTF);
+}
+@font-face {
+  font-family: stereofidelic;
+  src: url(assets/stereofidelic/stereofidelic.ttf);
 }
