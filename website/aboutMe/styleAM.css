@@ -6,9 +6,9 @@ canvas {
   display: block;
 }
 #selfPortrait {
-  position: absolute;
+  /* position: absolute; */
   border-radius: 20px;
-  border: 5px solid rgb(22, 227, 167);
+  border: 6px solid rgb(22, 227, 167);
   left: 5px;
   top: 5px;
   animation: borderChange 5s infinite;
@@ -28,10 +28,15 @@ canvas {
 /* @keyframes animationname {keyframes-selector {css-styles;}} */
 /* https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp */
 @keyframes borderChange {
-  50% {border: 5px solid rgb(95, 63, 153);}
+  50% {border-color: rgb(95, 63, 153);}
+}
+/* makes border bulge in and out */
+@keyframes borderChange2 {
+  50% {border: 6px solid rgb(95, 63, 153);}
 }
 #intro {
-  position: absolute;
+  display: inline;
+  position: relative;
   top: -10px;
   left: 525px;
 }
@@ -80,9 +85,8 @@ canvas {
   color: rgb(0, 206, 241);
 }
 #dogs {
-  position: absolute;
   border-radius: 20px;
-  border: 5px solid rgb(22, 227, 167);
+  border: 6px solid rgb(22, 227, 167);
   animation: borderChange 5s infinite;
 }
 #hr3 {
@@ -101,16 +105,15 @@ canvas {
   top: -13px;
 }
 #doggyP {
-  position: absolute;
+  position: relative;
   left: 520px;
+  top: -500px;
   font-size: 23px;
   color: rgb(255, 112, 166);
 }
-/* figure out how to make this move */
 #funFacts {
   position: relative;
-  top: 910px;
-  left: 5px;
+  top: -100px;
 }
 #hr4 {
   border: none;
@@ -128,8 +131,9 @@ canvas {
   top: -13px;
 }
 #conciseDescriptHeader {
-  position: relative;
-  left: 6px;
+  text-align: center;
+  /* position: relative;
+  left: 6px; */
   font-size: 27px;
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px rgb(22, 227, 167);
@@ -144,8 +148,9 @@ canvas {
   src: url(assets/humanoidFont/HUMANOIDSTRAIGHT.TTF);
 }
 #conciseDescript {
+  display: inline-flex;
   border-radius: 20px;
-  border: 5px solid rgb(22, 227, 167);
+  border: 6px solid rgb(22, 227, 167);
   animation: borderChange 5s infinite;
   position: relative;
   top: -13px;
@@ -153,9 +158,31 @@ canvas {
 #facts {
   font-size: 20px;
   color: rgb(255, 112, 166);
-}
-#morePics {
   position: relative;
-  top: 920px;
-  left: 5px;
+  left: -10px;
+  border-radius: 20px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#bros {
+  border-radius: 20px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+  position: relative;
+  top: -13px;
+}
+#broDescript {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  border: 2px solid rgb(95, 63, 153);
+  color: rgb(255, 105, 51);
+  left: -515px;
+  top: 20px;
+}
+#parents {
+  display: inline-block;
+  border-radius: 20px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
 }
