@@ -5,11 +5,106 @@ html, body {
 canvas {
   display: block;
 }
+@keyframes borderChange {
+  50% {border-color: rgb(95, 63, 153);}
+}
 #seniorPortrait {
   text-align: center;
   background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/chinaPhoto.jpeg');
 }
+#selfPortraitLabel {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+}
 #selfPortrait {
   position: relative;
   top: 10px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#chinaDescript {
+  color: white;
+  font-size: 15px;
+  text-align: right;
+  background-color: rgb(95, 63, 153);
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#intro {
+  text-align: center;
+}
+#headerIntro {
+  background-color: rgb(95, 63, 153);
+  color: white;
+  font-size: 50px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#myName {
+  color: darkblue;
+  text-shadow: 2px 2px rgb(22, 227, 167);
+}
+#hr1 {
+  border: none;
+  border-top: 5px double;
+  color: rgb(95, 63, 153);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+#hr1:after {
+  background: #fff;
+  content: '§' ;
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+#p1 {
+  font-size: 23px;
+  color: darkblue;
+}
+#p2 {
+  font-size: 23px;
+  color: rgb(22, 227, 167);
+}
+#dogs {
+  display: block;
+  margin-left: inherit;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#formatDogs {
+  position: relative;
+  left: 10px;
+  display: inline-flex;
+}
+#doggyP {
+  position: relative;
+  left: 5px;
+  top: -15px;
+  font-size: 23px;
+  color: darkblue;
+}
+#conciseDescript {
+  display: inline-flex;
+  border-radius: 20px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+  position: relative;
+  top: -13px;
+}
+#facts {
+  background-color: rgb(95, 63, 153);
+  font-size: 20px;
+  color: rgb(22, 227, 167);
+  position: relative;
+  left: -10px;
+  border-radius: 20px;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#conciseDescriptHeader {
+  color: darkblue;
 }
