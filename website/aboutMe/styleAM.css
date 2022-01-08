@@ -8,6 +8,19 @@ canvas {
 @keyframes borderChange {
   50% {border-color: rgb(95, 63, 153);}
 }
+#backButton {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
+  font-family: verdana;
+  font-style: italic;
+  background-color: rgb(95, 63, 153);
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
 #seniorPortrait {
   text-align: center;
   background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/chinaPhoto.jpeg');
