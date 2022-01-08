@@ -109,7 +109,53 @@ canvas {
   color: darkblue;
 }
 #morePics {
-  position: relative;
-  left: 10px;
+  display: flex;
+  flex-direction: column;
+	flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#slideshowHeader {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background-color: rgb(95, 63, 153);
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#slideshowButtons {
   display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#spaceButtons {
+  visibility: hidden;
+}
+#nextPic {
+  background-color: rgb(95, 63, 153);
+  border-color: rgb(22, 227, 167);
+  color: white;
+}
+#bros {
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#parents {
+  position: relative;
+  display: none;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#roomPic {
+  position: relative;
+  display: none;
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#imageDescript {
+  font-size: 20px;
 }
