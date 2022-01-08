@@ -109,12 +109,15 @@ canvas {
   color: darkblue;
 }
 #morePics {
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
   display: flex;
   flex-direction: column;
 	flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/peruPhoto.jpeg');
 }
 #slideshowHeader {
   text-align: center;
@@ -133,11 +136,15 @@ canvas {
   align-content: center;
 }
 #spaceButtons {
+  font-size: 30px;
   visibility: hidden;
 }
 #nextPic {
-  background-color: rgb(95, 63, 153);
+  border-width: thick;
+  font-size: 20px;
   border-color: rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+  background-color: rgb(95, 63, 153);
   color: white;
 }
 #bros {
@@ -150,6 +157,10 @@ canvas {
   border: 6px solid rgb(22, 227, 167);
   animation: borderChange 5s infinite;
 }
+#fix {
+  position: relative;
+  top: 10px;
+}
 #roomPic {
   position: relative;
   display: none;
@@ -158,4 +169,5 @@ canvas {
 }
 #imageDescript {
   font-size: 20px;
+  background-color: white;
 }
