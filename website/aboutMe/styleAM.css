@@ -108,3 +108,8 @@ canvas {
 #conciseDescriptHeader {
   color: darkblue;
 }
+#morePics {
+  position: relative;
+  left: 10px;
+  display: inline-flex;
+}
