@@ -1,10 +1,13 @@
 let fork;
 let chef;
 let paella;
+let christmasFood;
 
 function preload() {
   fork = loadImage('../assets/fork.png');
   chef = loadImage('../assets/chef2.png');
+  paella = loadImage('../assets/paella.png')
+  christmasFood = loadImage('../assets/christmasFood.jpg')
 }
 
 function setup() {
@@ -28,5 +31,6 @@ function draw() {
      image(chef, x, y);
    }
   }
-
+  image(paella, 10, 10);
+  image(christmasFood, windowWidth - 610, 10);
 }
