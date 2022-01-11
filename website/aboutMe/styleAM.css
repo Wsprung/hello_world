@@ -45,8 +45,24 @@ canvas {
   border: 6px solid rgb(22, 227, 167);
   animation: borderChange 5s infinite;
 }
+#email {
+  color: rgb(22, 227, 167);
+  position: relative;
+  top: -7px;
+  font-size: 33px;
+}
+#git {
+  position: relative;
+  top: 5px;
+  color: rgb(22, 227, 167);
+  font-size: 30px;
+}
 #intro {
   text-align: center;
+}
+#contactInfo {
+  text-align: center;
+  font-size: 30px;
 }
 #headerIntro {
   background-color: rgb(95, 63, 153);
@@ -68,8 +84,25 @@ canvas {
   height: 5px;
 }
 #hr1:after {
-  background: #fff;
+  background: none;
   content: '§' ;
+  padding: 0 1px;
+  position: relative;
+  top: -13px;
+}
+#hr2 {
+  position: relative;
+  top: -3px;
+  border: none;
+  color: rgb(95, 63, 153);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+#hr2:after {
+  background: #fff;
+  content: '❂' ;
+  font-size: 35px;
   padding: 0 4px;
   position: relative;
   top: -13px;

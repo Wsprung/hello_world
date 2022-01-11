@@ -5,3 +5,20 @@ html, body {
 canvas {
   display: block;
 }
+@keyframes borderChange {
+  50% {border-color: rgb(95, 63, 153);}
+}
+@font-face {
+  font-family: robotica;
+  src: url(../assets/robotica/ROBOTICA.TTF);
+}
+#paellaDescript {
+  display: none;
+  font-family: fantasy;
+  position: absolute;
+  color: #47374F;
+  border: 6px solid #7B9C96;
+  animation: borderChange 5s infinite;
+  background-color: white;
+  top: 10px;
+}

@@ -4,6 +4,7 @@ let paella;
 let christmasFood;
 
 function preload() {
+  robotica = loadFont('../assets/robotica/ROBOTICA.TTF');
   fork = loadImage('../assets/fork.png');
   chef = loadImage('../assets/chef2.png');
   paella = loadImage('../assets/paella.png')
@@ -33,4 +34,19 @@ function draw() {
   }
   image(paella, 10, 10);
   image(christmasFood, windowWidth - 610, 10);
+
+  paellaDescript();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function paellaDescript() {
+  if(mouseX < 544 && mouseX > 10 && mouseY < 720 && mouseY > 10) {
+    document.getElementById('paellaDescript').style.display = "inline";
+  }
+  else {
+    document.getElementById('paellaDescript').style.display = "none";
+  }
 }
