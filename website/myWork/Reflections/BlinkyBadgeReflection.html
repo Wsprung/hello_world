@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+
+    <style>
+
+        iframe {
+          margin-left: 15vw;
+          margin-bottom: vh;
+          margin-top: vh;
+          height: 95vh;
+          width: 70vw;
+          /* position: absolute; */
+          z-index: -1;
+          border: none;
+          clear: both;
+        }
+
+        body {background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/chinaPhoto.jpeg'); }
+
+        @keyframes borderChange {
+          50% {border-color: rgb(95, 63, 153);}
+        }
+
+        #homeButton {
+          border: 5px solid rgb(22, 227, 167);
+          animation: borderChange 5s infinite;
+          background-color: hotpink;
+        }
+
+        #homeButtonDiv {
+          text-align: center;
+        }
+
+        a:link {
+          display: inline-block;
+          padding: 3px;
+          text-decoration:none !important;
+          color: black;
+          font-size: medium;
+          text-align: center;
+          border-bottom: none;
+        }
+
+        a:hover {
+          background-color: rgb(121, 250, 197) !important;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+  <a href = "../index.html" id = "homeButton"><h2>Back</h2></a>
+
+  <div id = "homeButtonDiv">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRCEvnOSnGPrwIy4tENaweI-E3drZZo4Vary8cYQq0XAcaQz60WnWqF3dim54TxhIuDjlhvXR8F0fVW/pub?embedded=true"></iframe>
+  </div>
+</body>
+</html>
