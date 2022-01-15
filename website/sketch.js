@@ -38,6 +38,8 @@ function draw() {
   let archiveHeader = document.getElementById('archiveHeader');
   archiveHeader.style.left = "blue";
 
+//make aboutMe buttons show when person clicks back button
+
   // var name = document.getElementById('usersName').value; -> saves value from input bar
   // document.getElementById('hiToUser').innerHTML = name;
 

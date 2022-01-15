@@ -4,4 +4,13 @@ html, body {
 }
 canvas {
   display: block;
+  overflow: hidden;
 }
+/* {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: stretch;
+} */

@@ -7,7 +7,7 @@ function preload() {
 function setup() {
   //runs once
   //square design, same width and height
-  createCanvas(2 * windowWidth, 2 * windowHeight);
+  createCanvas(windowWidth, 2 * windowHeight);
   // createCanvas(windowWidth, windowHeight);
 
   background(0,0,0);
