@@ -2,8 +2,9 @@ let faceRisingGif;
 let whiteSquare;
 
 function preload() {
+  blueTile = loadImage('assets/bluetile-01.png');
+  greenTile = loadImage('assets/greentile-01.png');
   faceRisingGif = loadImage('assets/FaceRisingNoLoop250.gif');
-  whiteSquare = loadImage('assets/white_square.png')
 }
 
 function setup() {
@@ -14,13 +15,14 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background("white");
 
 //variable for the number of squares per row
   var numSquares = windowWidth/faceRisingGif.width;
 //variable for the side length of each square
   var sideLen = windowWidth/numSquares;
 //iterates in y-direction to create rows in the y-direction
+  var tileColor = true;
   for(var y = 0; y < windowHeight; y = y + sideLen) {
     //iterates in x-direction to create row of squares
     for(var x = 0; x < windowWidth; x = x + sideLen) {
@@ -31,7 +33,15 @@ function draw() {
       if(y + sideLen > windowHeight) { printYEdge = true; }
 
       if(y != sideLen || x == 0 || printXEdge || printYEdge) { image(faceRisingGif, x, y); }
-      else { image(whiteSquare, x, y); }
+
+      // if(tileColor) {
+      //   image(blueTile, x, y);
+      //   tileColor = false;
+      // }
+      // else {
+      //   image(greenTile, x, y);
+      //   tileColor = true;
+      // }
   }
 }
 
