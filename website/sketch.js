@@ -34,15 +34,6 @@ function draw() {
       else { image(whiteSquare, x, y); }
   }
 }
-//placing archiveHeader in sketch.js so it can be edited in JavaScript
-  let archiveHeader = document.getElementById('archiveHeader');
-  archiveHeader.style.left = "blue";
-
-//make aboutMe buttons show when person clicks back button
-
-  // var name = document.getElementById('usersName').value; -> saves value from input bar
-  // document.getElementById('hiToUser').innerHTML = name;
-
 
 }
 function windowResized() {

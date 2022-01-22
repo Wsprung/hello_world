@@ -8,6 +8,7 @@ canvas {
 }
 #table {
   position: absolute;
+  top: 80px;
   /* justify-content: space-around; figure this out */
 }
 /* {
