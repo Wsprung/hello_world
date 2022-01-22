@@ -6,6 +6,10 @@ canvas {
   display: block;
   overflow: hidden;
 }
+#table {
+  position: absolute;
+  /* justify-content: space-around; figure this out */
+}
 /* {
 	display: flex;
 	flex-direction: row;

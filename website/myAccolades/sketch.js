@@ -6,7 +6,9 @@ function preload() {
   message = "Expand your screen for the best experience!";
 }
 function setup() {
-  createCanvas(windowWidth, windowHeight + backgroundImg.height - 30);
+  let canvas = createCanvas(windowWidth, windowHeight + backgroundImg.height - 30);
+  canvas.parent('sketch-container');
+  // createCanvas(windowWidth, windowHeight + backgroundImg.height - 30);
 }
 
 function draw() {
