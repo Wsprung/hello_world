@@ -6,6 +6,9 @@ canvas {
   display: block;
   overflow: hidden;
 }
+#table {
+  width: 70%;
+}
 #sketch-container {
   /* background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/bookshelfOneRow.png'); */
   background-color: black;
@@ -21,6 +24,12 @@ canvas {
   top: 65px;
   left: 50px;
 }
+/* #ccDescript {
+  display: hidden;
+  position: relative;
+  top: 65px;
+  left: 50px;
+} */
 #nmsDescript {
   /* visibility: collapse; */
   display: hidden;
