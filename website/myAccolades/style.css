@@ -24,6 +24,21 @@ canvas {
 #row2 {
   position: absolute;
   top: 355px;
+  left: 20px;
+}
+#awardBadgeIcon {
+  position: relative;
+  left: 180px;
+  top: 13px;
+}
+#awardIcon2 {
+  position: relative;
+  left: 390px;
+}
+#articleIcon2 {
+  position: relative;
+  top: 65px;
+  left: 360px;
 }
 /* {
 	display: flex;
