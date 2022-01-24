@@ -48,7 +48,7 @@ function nmsDescript() {
   // console.log(right + "  " + left + "  " + top + "  " + bottom);
 // if(mouseX < right + 0 && mouseX > left + 0 && mouseY < bottom + 0 && mouseY > top + 0) {
 
-  if(mouseX < 1676 && mouseX > 1311 && mouseY < 440 && mouseY > 159) {
+  if(mouseX < 1606 && mouseX > 1241 && mouseY < 440 && mouseY > 159) {
     document.getElementById('nmsDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
   }
@@ -65,7 +65,7 @@ function ccDescript() {
   var top = ccDescriptBounds.top;
   var bottom = ccDescriptBounds.bottom;
   // console.log(right + "  " + left + "  " + top + "  " + bottom);
-  if(mouseX < 437 && mouseX > 72 && mouseY < 440 && mouseY > 159) {
+  if(mouseX < 397 && mouseX > 52 && mouseY < 440 && mouseY > 159) {
     document.getElementById('ccDescript').style.display = 'inline';
     document.getElementById('articleIcon').style.display = 'none';
   }

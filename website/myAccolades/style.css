@@ -1,10 +1,11 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 canvas {
   display: block;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #table {
   width: 70%;
@@ -15,7 +16,7 @@ canvas {
 }
 #row1 {
   position: absolute;
-  left: 20px;
+  left: -20px;
   top: -67px;
   /* justify-content: space-around; figure this out */
 }
@@ -35,16 +36,17 @@ canvas {
   /* display: hidden; */
   position: relative;
   top: 65px;
-  left: 50px;
+  left: 30px;
 }
 #articleIconLight {
   position: relative;
   top: 65px;
-  left: 50px;
+  left: 30px;
 }
 #flowerIcon {
   position: relative;
   top: 14px;
+  left: -80px;
 }
 #row2 {
   position: absolute;
