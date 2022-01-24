@@ -6,6 +6,10 @@ canvas {
   display: block;
   overflow: hidden;
 }
+#sketch-container {
+  /* background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/bookshelfOneRow.png'); */
+  background-color: black;
+}
 #row1 {
   position: absolute;
   left: 20px;
@@ -13,6 +17,11 @@ canvas {
   /* justify-content: space-around; figure this out */
 }
 #articleIcon {
+  position: relative;
+  top: 40px;
+  left: 50px;
+}
+#articleIconLight {
   position: relative;
   top: 65px;
   left: 50px;
@@ -23,21 +32,20 @@ canvas {
 }
 #row2 {
   position: absolute;
-  top: 355px;
+  top: 475px;
   left: 20px;
 }
 #awardBadgeIcon {
   position: relative;
   left: 180px;
-  top: 13px;
 }
 #awardIcon2 {
   position: relative;
-  left: 390px;
+  left: 490px;
 }
 #articleIcon2 {
   position: relative;
-  top: 65px;
+  top: 55px;
   left: 360px;
 }
 /* {

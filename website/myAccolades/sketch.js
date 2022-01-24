@@ -13,6 +13,7 @@ function setup() {
 
 function draw() {
   // image(backgroundImg, windowWidth/2 - 1375/2, windowHeight/2 - 768/2);
+  background("black");
   backgroundImgPrint();
   fill("hotpink");
   textSize(20);
@@ -24,14 +25,25 @@ function windowResized() {
 function backgroundImgPrint() {
     var numSquares = windowWidth/backgroundImg.width;
 
+
   //variable for the length of each row
     var sideLen = windowWidth/numSquares;
   //iterates in y-direction to create rows in the y-direction
     for(var y = 0; y < backgroundImg.height * 4; y = y + backgroundImg.height) {
    //iterates in x-direction to create a bookshelf row
     for(var x = 0; x < windowWidth; x = x + sideLen) {
-      console.log(windowHeight);
      image(backgroundImg, x, y);
     }
+  }
+}
+
+function nmsDescript() {
+  if(mouseX < 544 && mouseX > 10 && mouseY < 720 && mouseY > 10) {
+    document.getElementById('nmsDescript').style.color = "pink";
+    //fix this for NMS description 
+    document.getElementById('nmsDescript').style.display = "inline";
+  }
+  else {
+    document.getElementById('nmsDescript').style.display = "none";
   }
 }
