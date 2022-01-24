@@ -8,17 +8,22 @@ canvas {
 }
 #row1 {
   position: absolute;
+  left: 20px;
   top: -67px;
   /* justify-content: space-around; figure this out */
 }
 #articleIcon {
   position: relative;
   top: 65px;
-  left: 40px;
+  left: 50px;
 }
 #flowerIcon {
   position: relative;
   top: 14px;
+}
+#row2 {
+  position: absolute;
+  top: 355px;
 }
 /* {
 	display: flex;
