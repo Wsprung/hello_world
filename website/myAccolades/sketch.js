@@ -19,7 +19,7 @@ function draw() {
   textSize(20);
   text(message, 10, 80, 270, 80);
   nmsDescript();
-  // ccDescript();
+  ccDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight + backgroundImg.height - 30);
@@ -45,10 +45,10 @@ function nmsDescript() {
   var left = nmsDescriptBounds.left;
   var top = nmsDescriptBounds.top;
   var bottom = nmsDescriptBounds.bottom;
-console.log(right + "  " + left + "  " + top + "  " + bottom);
-if(mouseX < right + 0 && mouseX > left + 0 && mouseY < bottom + 0 && mouseY > top + 0) {
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
+// if(mouseX < right + 0 && mouseX > left + 0 && mouseY < bottom + 0 && mouseY > top + 0) {
 
-  // if(mouseX < 1676 && mouseX > 1311 && mouseY < 440 && mouseY > 159) {
+  if(mouseX < 1676 && mouseX > 1311 && mouseY < 440 && mouseY > 159) {
     document.getElementById('nmsDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
   }
@@ -58,14 +58,19 @@ if(mouseX < right + 0 && mouseX > left + 0 && mouseY < bottom + 0 && mouseY > to
   }
 }
 
-// function ccDescript() {
-//   var ccDescriptBounds = document.getElementById('ccDescript').getBoundingClientRect();
-//   if(mouseX < ccDescriptBounds.right && mouseX > ccDescriptBounds.left && mouseY < ccDescriptBounds.top && mouseY > ccDescriptBounds.bottom) {
-//     document.getElementById('ccDescript').style.display = 'inline';
-//     document.getElementById('articleIcon').style.display = 'none';
-//   }
-//   else {
-//     document.getElementById('ccDescript').style.display = 'none';
-//     document.getElementById('articleIcon').style.display = 'inline';
-//   }
-// }
+function ccDescript() {
+  var ccDescriptBounds = document.getElementById('articleIcon').getBoundingClientRect();
+  var right = ccDescriptBounds.right;
+  var left = ccDescriptBounds.left;
+  var top = ccDescriptBounds.top;
+  var bottom = ccDescriptBounds.bottom;
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 437 && mouseX > 72 && mouseY < 440 && mouseY > 159) {
+    document.getElementById('ccDescript').style.display = 'inline';
+    document.getElementById('articleIcon').style.display = 'none';
+  }
+  else {
+    document.getElementById('ccDescript').style.display = 'none';
+    document.getElementById('articleIcon').style.display = 'inline';
+  }
+}

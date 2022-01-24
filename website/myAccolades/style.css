@@ -24,15 +24,15 @@ canvas {
   top: 65px;
   left: 50px;
 }
-/* #ccDescript {
-  display: hidden;
+#ccDescript {
+  /* display: hidden; */
   position: relative;
   top: 65px;
   left: 50px;
-} */
+}
 #nmsDescript {
   /* visibility: collapse; */
-  display: hidden;
+  /* display: hidden; */
   position: relative;
   top: 65px;
   left: 50px;
