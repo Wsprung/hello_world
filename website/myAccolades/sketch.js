@@ -39,12 +39,13 @@ function backgroundImgPrint() {
 }
 
 function nmsDescript() {
-  if(mouseX < 544 && mouseX > 10 && mouseY < 720 && mouseY > 10) {
-    document.getElementById('nmsDescript').style.color = "pink";
-    //fix this for NMS description
-    document.getElementById('nmsDescript').style.display = "inline";
+  var nmsDescriptBounds = document.getElementById('articleIconLight').getBoundingClientRect();
+  if(mouseX < 1676 && mouseX > 1311 && mouseY < 440 && mouseY > 160) {
+    document.getElementById('nmsDescript').style.display = 'inline';
+    document.getElementById('articleIconLight').style.display = 'none';
   }
   else {
-    document.getElementById('nmsDescript').style.display = "none";
+    document.getElementById('nmsDescript').style.display = 'none';
+    document.getElementById('articleIconLight').style.display = 'inline';
   }
 }
