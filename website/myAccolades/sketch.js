@@ -40,7 +40,7 @@ function backgroundImgPrint() {
 
 function nmsDescript() {
   var nmsDescriptBounds = document.getElementById('articleIconLight').getBoundingClientRect();
-  if(mouseX < 1676 && mouseX > 1311 && mouseY < 440 && mouseY > 160) {
+  if(mouseX < nmsDescriptBounds.right && mouseX > nmsDescriptBounds.left && mouseY < nmsDescriptBounds.top && mouseY > nmsDescriptBounds.bottom) {
     document.getElementById('nmsDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
   }
