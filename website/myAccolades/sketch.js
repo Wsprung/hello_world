@@ -18,6 +18,7 @@ function draw() {
   fill("hotpink");
   textSize(20);
   text(message, 10, 80, 270, 80);
+  nmsDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight + backgroundImg.height - 30);
@@ -40,7 +41,7 @@ function backgroundImgPrint() {
 function nmsDescript() {
   if(mouseX < 544 && mouseX > 10 && mouseY < 720 && mouseY > 10) {
     document.getElementById('nmsDescript').style.color = "pink";
-    //fix this for NMS description 
+    //fix this for NMS description
     document.getElementById('nmsDescript').style.display = "inline";
   }
   else {
