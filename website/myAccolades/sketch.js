@@ -23,6 +23,7 @@ function draw() {
   hackathonDescript();
   nmsDescript();
   reportCardDescript();
+  flowersDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, backgroundImg.height * 3.5);
@@ -116,7 +117,7 @@ function reportCardDescript() {
   var left = resumeIconBounds.left;
   var top = resumeIconBounds.top;
   var bottom = resumeIconBounds.bottom;
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 754 && mouseX > 389 && mouseY < 1272.5 && mouseY > 991.5) {
     document.getElementById('resumeIcon').style.display = 'inline';
     document.getElementById('articleIcon3').style.display = 'none';
@@ -124,5 +125,22 @@ function reportCardDescript() {
   else {
     document.getElementById('resumeIcon').style.display = 'none';
     document.getElementById('articleIcon3').style.display = 'inline';
+  }
+}
+
+function flowersDescript() {
+  var flowerDescriptBounds = document.getElementById('flowerIcon').getBoundingClientRect();
+  var right = flowerDescriptBounds.right;
+  var left = flowerDescriptBounds.left;
+  var top = flowerDescriptBounds.top;
+  var bottom = flowerDescriptBounds.bottom;
+  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 653 && mouseX > 389 && mouseY < 887 && mouseY > 523) {
+    document.getElementById('flowerDescript').style.display = 'inline';
+    document.getElementById('flowerIcon').style.display = 'none';
+  }
+  else {
+    document.getElementById('flowerDescript').style.display = 'none';
+    document.getElementById('flowerIcon').style.display = 'inline';
   }
 }
