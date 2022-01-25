@@ -20,6 +20,7 @@ function draw() {
   // text(message, 10, 80, 270, 80);
   testScoresDescript();
   ccDescript();
+  hackathonDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, backgroundImg.height * 3.5);
@@ -72,4 +73,21 @@ function ccDescript() {
     document.getElementById('ccDescript').style.display = 'none';
     document.getElementById('articleIcon').style.display = 'inline';
   }
+}
+
+function hackathonDescript() {
+  var hackathonDescriptionBounds = document.getElementById('hackathonIcon').getBoundingClientRect();
+  var right = hackathonDescriptionBounds.right;
+  var left = hackathonDescriptionBounds.left;
+  var top = hackathonDescriptionBounds.top;
+  var bottom = hackathonDescriptionBounds.bottom;
+  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // if(mouseX < 397 && mouseX > 52 && mouseY < 439.8 && mouseY > 158.8) {
+  //   document.getElementById('ccDescript').style.display = 'inline';
+  //   document.getElementById('hackathonDescript').style.display = 'none';
+  // }
+  // else {
+  //   document.getElementById('ccDescript').style.display = 'none';
+  //   document.getElementById('hackathonDescript').style.display = 'inline';
+  // }
 }
