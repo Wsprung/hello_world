@@ -16,57 +16,46 @@ canvas {
 }
 #row1 {
   position: absolute;
-  left: -20px;
+  left: 20px;
   top: -67px;
   /* justify-content: space-around; figure this out */
+}
+#awardIcon {
+  position: relative;
+  left: -100px;
 }
 #articleIcon {
   position: relative;
   top: 65px;
-  left: 50px;
 }
 #ccDescript {
   /* display: hidden; */
   position: relative;
   top: 65px;
-  left: 50px;
 }
 #nmsDescript {
-  /* visibility: collapse; */
-  /* display: hidden; */
   position: relative;
   top: 65px;
-  left: 30px;
+  left: -160px;
 }
 #articleIconLight {
   position: relative;
   top: 65px;
-  left: 30px;
-}
-#flowerIcon {
-  position: relative;
-  left: 320px;
+  left: -160px;
 }
 #row2 {
+  border-spacing: 20px;
   position: absolute;
-  top: 475px;
-  left: 20px;
+  top: 455px;
+  left: 60px;
 }
-#awardBadgeIcon {
-  position: relative;
-  left: 180px;
-}
-#awardIcon2 {
-  position: relative;
-  left: 490px;
-}
-#articleIcon2 {
+/* #articleIcon2 {
   position: relative;
   top: 55px;
   left: 360px;
-}
+} */
 #row3 {
   position: absolute;
-  top: 895px;
-  left: -100px;
+  border-spacing: 20px;
+  top: 875px;
 }
