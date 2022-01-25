@@ -9,6 +9,8 @@ canvas {
 }
 #table {
   width: 70%;
+  position: absolute;
+  top: 88px;
 }
 #sketch-container {
   /* background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/bookshelfOneRow.png'); */
@@ -17,9 +19,6 @@ canvas {
 #backButton {
   color: white;
   font-size: 15px;
-  position: relative;
-  top: -283px;
-  left: 17px;
   font-size: 20px;
   font-family: verdana;
   font-style: italic;
@@ -27,49 +26,13 @@ canvas {
   border: 6px solid rgb(22, 227, 167);
   animation: borderChange 5s infinite;
 }
-#row1 {
-  position: absolute;
-  left: -20px;
-  top: -67px;
-  /* justify-content: space-around; figure this out */
-}
-#awardIcon {
-  position: relative;
-  left: -100px;
-}
-#articleIcon {
-  position: relative;
-  top: 45px;
-}
-#ccDescript {
-  position: relative;
-  top: 45px;
-}
-#testScoresDescript {
-  position: relative;
-  top: 65px;
-  left: -160px;
-}
-#articleIconLight {
-  position: relative;
-  top: 65px;
-  left: -160px;
-}
 #row2 {
-  border-spacing: 20px;
-  position: absolute;
-  top: 455px;
-  left: 60px;
-}
-/* #articleIcon2 {
   position: relative;
-  top: 55px;
-  left: 360px;
-} */
+  top: 39px;
+}
 #row3 {
-  position: absolute;
-  border-spacing: 20px;
-  top: 875px;
+  position: relative;
+  top: 76px;
 }
 @keyframes borderChange {
   50% {border-color: rgb(95, 63, 153);}
