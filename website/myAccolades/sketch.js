@@ -18,7 +18,7 @@ function draw() {
   fill("hotpink");
   textSize(20);
   text(message, 10, 80, 270, 80);
-  nmsDescript();
+  testScoresDescript();
   ccDescript();
 }
 function windowResized() {
@@ -39,20 +39,20 @@ function backgroundImgPrint() {
   }
 }
 
-function nmsDescript() {
-  var nmsDescriptBounds = document.getElementById('articleIconLight').getBoundingClientRect();
-  var right = nmsDescriptBounds.right;
-  var left = nmsDescriptBounds.left;
-  var top = nmsDescriptBounds.top;
-  var bottom = nmsDescriptBounds.bottom;
+function testScoresDescript() {
+  var testScoresDescriptBounds = document.getElementById('articleIconLight').getBoundingClientRect();
+  var right = testScoresDescriptBounds.right;
+  var left = testScoresDescriptBounds.left;
+  var top = testScoresDescriptBounds.top;
+  var bottom = testScoresDescriptBounds.bottom;
   console.log(right + "  " + left + "  " + top + "  " + bottom);
 
   if(mouseX < 1349 && mouseX > 984 && mouseY < 440 && mouseY > 159) {
-    document.getElementById('nmsDescript').style.display = 'inline';
+    document.getElementById('testScoresDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
   }
   else {
-    document.getElementById('nmsDescript').style.display = 'none';
+    document.getElementById('testScoresDescript').style.display = 'none';
     document.getElementById('articleIconLight').style.display = 'inline';
   }
 }
