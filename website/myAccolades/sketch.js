@@ -64,7 +64,7 @@ function ccDescript() {
   var left = ccDescriptBounds.left;
   var top = ccDescriptBounds.top;
   var bottom = ccDescriptBounds.bottom;
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 397 && mouseX > 52 && mouseY < 439.8 && mouseY > 158.8) {
     document.getElementById('ccDescript').style.display = 'inline';
     document.getElementById('articleIcon').style.display = 'none';
@@ -81,13 +81,13 @@ function hackathonDescript() {
   var left = hackathonDescriptionBounds.left;
   var top = hackathonDescriptionBounds.top;
   var bottom = hackathonDescriptionBounds.bottom;
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
-  // if(mouseX < 397 && mouseX > 52 && mouseY < 439.8 && mouseY > 158.8) {
-  //   document.getElementById('ccDescript').style.display = 'inline';
-  //   document.getElementById('hackathonDescript').style.display = 'none';
-  // }
-  // else {
-  //   document.getElementById('ccDescript').style.display = 'none';
-  //   document.getElementById('hackathonDescript').style.display = 'inline';
-  // }
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 1095 && mouseX > 813 && mouseY < 1293 && mouseY > 888) {
+    document.getElementById('hackathonDescript').style.display = 'inline';
+    document.getElementById('hackathonIcon').style.display = 'none';
+  }
+  else {
+    document.getElementById('hackathonDescript').style.display = 'none';
+    document.getElementById('hackathonIcon').style.display = 'inline';
+  }
 }
