@@ -17,7 +17,7 @@ function draw() {
   backgroundImgPrint();
   fill("hotpink");
   textSize(20);
-  text(message, 10, 80, 270, 80);
+  // text(message, 10, 80, 270, 80);
   testScoresDescript();
   ccDescript();
 }
@@ -45,9 +45,9 @@ function testScoresDescript() {
   var left = testScoresDescriptBounds.left;
   var top = testScoresDescriptBounds.top;
   var bottom = testScoresDescriptBounds.bottom;
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
 
-  if(mouseX < 1349 && mouseX > 984 && mouseY < 440 && mouseY > 159) {
+  if(mouseX < 1219 && mouseX > 874 && mouseY < 440 && mouseY > 159) {
     document.getElementById('testScoresDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
   }
@@ -63,8 +63,8 @@ function ccDescript() {
   var left = ccDescriptBounds.left;
   var top = ccDescriptBounds.top;
   var bottom = ccDescriptBounds.bottom;
-  // console.log(right + "  " + left + "  " + top + "  " + bottom);
-  if(mouseX < 397 && mouseX > 52 && mouseY < 440 && mouseY > 159) {
+  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 397 && mouseX > 52 && mouseY < 439.8 && mouseY > 158.8) {
     document.getElementById('ccDescript').style.display = 'inline';
     document.getElementById('articleIcon').style.display = 'none';
   }

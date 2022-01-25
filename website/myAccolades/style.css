@@ -14,9 +14,22 @@ canvas {
   /* background-image: url('https://wsprung.github.io/whitneysArchive/website/assets/bookshelfOneRow.png'); */
   background-color: black;
 }
+#backButton {
+  color: white;
+  font-size: 15px;
+  position: relative;
+  top: -283px;
+  left: 17px;
+  font-size: 20px;
+  font-family: verdana;
+  font-style: italic;
+  background-color: rgb(95, 63, 153);
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
 #row1 {
   position: absolute;
-  left: 20px;
+  left: -20px;
   top: -67px;
   /* justify-content: space-around; figure this out */
 }
@@ -26,12 +39,12 @@ canvas {
 }
 #articleIcon {
   position: relative;
-  top: 65px;
+  top: 45px;
 }
 #ccDescript {
   /* display: hidden; */
   position: relative;
-  top: 65px;
+  top: 45px;
 }
 #testScoresDescript {
   position: relative;
@@ -58,4 +71,7 @@ canvas {
   position: absolute;
   border-spacing: 20px;
   top: 875px;
+}
+@keyframes borderChange {
+  50% {border-color: rgb(95, 63, 153);}
 }
