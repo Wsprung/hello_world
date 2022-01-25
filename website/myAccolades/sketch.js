@@ -22,6 +22,7 @@ function draw() {
   ccDescript();
   hackathonDescript();
   nmsDescript();
+  reportCardDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, backgroundImg.height * 3.5);
@@ -47,8 +48,7 @@ function testScoresDescript() {
   var left = testScoresDescriptBounds.left;
   var top = testScoresDescriptBounds.top;
   var bottom = testScoresDescriptBounds.bottom;
-  console.log("test");
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 1123 && mouseX > 758 && mouseY < 417.5 && mouseY > 136.5) {
     document.getElementById('testScoresDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
@@ -65,8 +65,7 @@ function ccDescript() {
   var left = ccDescriptBounds.left;
   var top = ccDescriptBounds.top;
   var bottom = ccDescriptBounds.bottom;
-  console.log("cc");
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 368 && mouseX > 3 && mouseY < 417.5 && mouseY > 136.5) {
     document.getElementById('ccDescript').style.display = 'inline';
     document.getElementById('articleIcon').style.display = 'none';
@@ -83,8 +82,7 @@ function hackathonDescript() {
   var left = hackathonDescriptionBounds.left;
   var top = hackathonDescriptionBounds.top;
   var bottom = hackathonDescriptionBounds.bottom;
-  console.log("hackathon");
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 1039 && mouseX > 758 && mouseY < 1319 && mouseY > 937) {
     document.getElementById('hackathonDescript').style.display = 'inline';
     document.getElementById('hackathonIcon').style.display = 'none';
@@ -101,14 +99,30 @@ function nmsDescript() {
   var left = nmsDescriptBounds.left;
   var top = nmsDescriptBounds.top;
   var bottom = nmsDescriptBounds.bottom;
-  console.log("nms");
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 724 && mouseX > 389 && mouseY < 467 && mouseY > 91) {
     document.getElementById('nmsIconDescript').style.display = 'inline';
     document.getElementById('awardIcon').style.display = 'none';
   }
   else {
     document.getElementById('nmsIconDescript').style.display = 'none';
-    document.getElementById('awardIcon').style.display = 'block';
+    document.getElementById('awardIcon').style.display = 'inline';
+  }
+}
+
+function reportCardDescript() {
+  var reportCardExcerptBounds = document.getElementById('articleIcon3').getBoundingClientRect();
+  var right = reportCardExcerptBounds.right;
+  var left = reportCardExcerptBounds.left;
+  var top = reportCardExcerptBounds.top;
+  var bottom = reportCardExcerptBounds.bottom;
+  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 754 && mouseX > 389 && mouseY < 1272.5 && mouseY > 991.5) {
+    document.getElementById('reportCardExcerpt').style.display = 'inline';
+    document.getElementById('articleIcon3').style.display = 'none';
+  }
+  else {
+    document.getElementById('reportCardExcerpt').style.display = 'none';
+    document.getElementById('articleIcon3').style.display = 'inline';
   }
 }
