@@ -2,13 +2,15 @@ let fork;
 let chef;
 let paella;
 let christmasFood;
+let message;
 
 function preload() {
   robotica = loadFont('../assets/robotica/ROBOTICA.TTF');
   fork = loadImage('../assets/fork.png');
   chef = loadImage('../assets/chef2.png');
-  paella = loadImage('../assets/paella.png')
-  christmasFood = loadImage('../assets/christmasFood.jpg')
+  paella = loadImage('../assets/paella.png');
+  christmasFood = loadImage('../assets/christmasFood.jpg');
+  message = "PAGE UNDER CONSTRUCTION";
 }
 
 function setup() {

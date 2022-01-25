@@ -5,3 +5,21 @@ html, body {
 canvas {
   display: block;
 }
+@keyframes borderChange {
+  50% {border-color: rgb(95, 63, 153);}
+}
+@font-face {
+  font-family: stereofidelic;
+  src: url(../assets/stereofidelic/stereofidelic.ttf);
+}
+#underConstruction {
+  position: absolute;
+  color: white;
+  font-family: stereofidelic;
+  top: -50px;
+  left: 500px;
+  font-size: 250px;
+  background-color: #47374F;
+  border: 16px solid #7B9C96;
+  animation: borderChange 5s infinite;
+}

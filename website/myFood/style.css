@@ -9,8 +9,8 @@ canvas {
   50% {border-color: rgb(95, 63, 153);}
 }
 @font-face {
-  font-family: robotica;
-  src: url(../assets/robotica/ROBOTICA.TTF);
+  font-family: stereofidelic;
+  src: url(../assets/stereofidelic/stereofidelic.ttf);
 }
 #paellaDescript {
   display: none;
@@ -21,4 +21,15 @@ canvas {
   animation: borderChange 5s infinite;
   background-color: white;
   top: 10px;
+}
+#underConstruction {
+  position: absolute;
+  color: white;
+  font-family: stereofidelic;
+  top: -50px;
+  left: 500px;
+  font-size: 250px;
+  background-color: #47374F;
+  border: 16px solid #7B9C96;
+  animation: borderChange 5s infinite;
 }
