@@ -111,18 +111,18 @@ function nmsDescript() {
 }
 
 function reportCardDescript() {
-  var reportCardExcerptBounds = document.getElementById('articleIcon3').getBoundingClientRect();
-  var right = reportCardExcerptBounds.right;
-  var left = reportCardExcerptBounds.left;
-  var top = reportCardExcerptBounds.top;
-  var bottom = reportCardExcerptBounds.bottom;
+  var resumeIconBounds = document.getElementById('articleIcon3').getBoundingClientRect();
+  var right = resumeIconBounds.right;
+  var left = resumeIconBounds.left;
+  var top = resumeIconBounds.top;
+  var bottom = resumeIconBounds.bottom;
   console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 754 && mouseX > 389 && mouseY < 1272.5 && mouseY > 991.5) {
-    document.getElementById('reportCardExcerpt').style.display = 'inline';
+    document.getElementById('resumeIcon').style.display = 'inline';
     document.getElementById('articleIcon3').style.display = 'none';
   }
   else {
-    document.getElementById('reportCardExcerpt').style.display = 'none';
+    document.getElementById('resumeIcon').style.display = 'none';
     document.getElementById('articleIcon3').style.display = 'inline';
   }
 }
