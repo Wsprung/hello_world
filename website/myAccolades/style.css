@@ -34,9 +34,6 @@ canvas {
   position: relative;
   top: 76px;
 }
-#reportCardExcerpt {
-  display: none;
-}
 @keyframes borderChange {
   50% {border-color: rgb(95, 63, 153);}
 }
