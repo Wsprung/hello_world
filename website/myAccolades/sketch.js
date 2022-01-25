@@ -45,10 +45,9 @@ function nmsDescript() {
   var left = nmsDescriptBounds.left;
   var top = nmsDescriptBounds.top;
   var bottom = nmsDescriptBounds.bottom;
-  // console.log(right + "  " + left + "  " + top + "  " + bottom);
-// if(mouseX < right + 0 && mouseX > left + 0 && mouseY < bottom + 0 && mouseY > top + 0) {
+  console.log(right + "  " + left + "  " + top + "  " + bottom);
 
-  if(mouseX < 1606 && mouseX > 1241 && mouseY < 440 && mouseY > 159) {
+  if(mouseX < 1349 && mouseX > 984 && mouseY < 440 && mouseY > 159) {
     document.getElementById('nmsDescript').style.display = 'inline';
     document.getElementById('articleIconLight').style.display = 'none';
   }

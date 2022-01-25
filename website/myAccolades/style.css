@@ -45,8 +45,7 @@ canvas {
 }
 #flowerIcon {
   position: relative;
-  top: 14px;
-  left: -80px;
+  left: 320px;
 }
 #row2 {
   position: absolute;
@@ -69,5 +68,5 @@ canvas {
 #row3 {
   position: absolute;
   top: 895px;
-  left: 20px;
+  left: -100px;
 }
