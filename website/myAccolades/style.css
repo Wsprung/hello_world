@@ -66,11 +66,8 @@ canvas {
   top: 55px;
   left: 360px;
 }
-/* {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: baseline;
-	align-content: stretch;
-} */
+#row3 {
+  position: absolute;
+  top: 895px;
+  left: 20px;
+}
