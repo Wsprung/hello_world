@@ -34,6 +34,12 @@ canvas {
   position: relative;
   top: 76px;
 }
+#hhrDescript {
+  display: none;
+}
+#apsDescript {
+  display: none;
+}
 @keyframes borderChange {
   50% {border-color: rgb(95, 63, 153);}
 }

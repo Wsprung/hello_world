@@ -24,6 +24,8 @@ function draw() {
   nmsDescript();
   reportCardDescript();
   flowersDescript();
+  apsDescript();
+  hhrDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, backgroundImg.height * 3.5);
@@ -134,7 +136,7 @@ function flowersDescript() {
   var left = flowerDescriptBounds.left;
   var top = flowerDescriptBounds.top;
   var bottom = flowerDescriptBounds.bottom;
-  console.log(right + "  " + left + "  " + top + "  " + bottom);
+  // console.log(right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 653 && mouseX > 389 && mouseY < 887 && mouseY > 523) {
     document.getElementById('flowerDescript').style.display = 'inline';
     document.getElementById('flowerIcon').style.display = 'none';
@@ -142,5 +144,39 @@ function flowersDescript() {
   else {
     document.getElementById('flowerDescript').style.display = 'none';
     document.getElementById('flowerIcon').style.display = 'inline';
+  }
+}
+
+function apsDescript() {
+  var apsDescriptBounds = document.getElementById('awardBadgeIcon').getBoundingClientRect();
+  var right = apsDescriptBounds.right;
+  var left = apsDescriptBounds.left;
+  var top = apsDescriptBounds.top;
+  var bottom = apsDescriptBounds.bottom;
+  // console.log("aps" + right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 283 && mouseX > 3 && mouseY < 896 && mouseY > 514) {
+    document.getElementById('apsDescript').style.display = 'inline';
+    document.getElementById('awardBadgeIcon').style.display = 'none';
+  }
+  else {
+    document.getElementById('apsDescript').style.display = 'none';
+    document.getElementById('awardBadgeIcon').style.display = 'inline';
+  }
+}
+
+function hhrDescript() {
+  var hhrDescriptBounds = document.getElementById('awardIcon2').getBoundingClientRect();
+  var right = hhrDescriptBounds.right;
+  var left = hhrDescriptBounds.left;
+  var top = hhrDescriptBounds.top;
+  var bottom = hhrDescriptBounds.bottom;
+  // console.log("hhr" + right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 1093 && mouseX > 758 && mouseY < 893 && mouseY > 517) {
+    document.getElementById('hhrDescript').style.display = 'inline';
+    document.getElementById('awardIcon2').style.display = 'none';
+  }
+  else {
+    document.getElementById('hhrDescript').style.display = 'none';
+    document.getElementById('awardIcon2').style.display = 'inline';
   }
 }

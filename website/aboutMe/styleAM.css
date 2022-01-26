@@ -164,6 +164,25 @@ canvas {
   border: 6px solid rgb(22, 227, 167);
   animation: borderChange 5s infinite;
 }
+#piano {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+#pianoVid {
+  border: 6px solid rgb(22, 227, 167);
+  animation: borderChange 5s infinite;
+}
+#pianoDescript {
+  color: rgb(22, 227, 167);
+  text-align: right;
+  position: relative;
+  left: -10px;
+  font-size: 20px;
+}
 #conciseDescriptHeader {
   color: darkblue;
 }
