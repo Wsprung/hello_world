@@ -19,8 +19,7 @@
     <div id = "header">
       <h1 id = "archiveHeader">Whitney's Archive</h1>
     </div>
-    <div id="sketch-container">
-      <div id = "textInBox">
+    <div id = "textInBox">
           <label for = "usersName" id = "labelUsersName">What's your name?:</label> <!--br produces a line break -->
           <input type = "text" id = "usersName" name = "usersName">
           <input type = "button" id = "enterName" onClick = "printName()" value = 'enter'>
@@ -34,24 +33,17 @@
                 document.getElementById('hiToUser').innerHTML = "Hi " + name + "!";
                 document.getElementById('textInBox').style.display = "none";
 
-                var currElement1 = document.getElementById('hiToUser');
-                var currElement2 = document.getElementById('welcomeUser');
-                moveIntoTextBox(currElement1, currElement2);
-            }
-              function moveIntoTextBox(element1, element2) {
                 document.getElementById('hiToUser').style.display = "inline";
                 document.getElementById('welcomeUser').style.display = "inline";
+                document.getElementById('helloUser').style.border =  "4px solid rgb(121, 250, 197)";
 
-                element1.style.top = "440px";
-                element1.style.left = "260px";
-
-                element2.style.top = "540px";
-                element2.style.left = "260px";
-              }
+            }
             </script>
       </div>
-      <h1 id = hiToUser></h1>
-      <h2 id = welcomeUser>Welcome to my archive. <br> Click around to learn more about me!</h2>
-    </div>
+      <div id = "helloUser">
+        <h1 id = hiToUser></h1>
+        <h2 id = welcomeUser><br>console.log(<span id = inner>"Welcome to my archive. Click around to learn more about me!"</span>);</h2>
+      </div>
+    <div id = "sketch-container"> </div>
 
 </body></html>

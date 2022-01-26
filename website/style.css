@@ -25,46 +25,46 @@ canvas {
   font-size: 70px;
   background-color: rgb(142, 199, 255);
 }
-#enterName {
+#helloUser {
   position: relative;
-  top: -10px;
+  top: -22px;
+  text-align: center;
+  background-color: black;
+}
+#enterName {
   font-size: 20px;
   color: rgb(142, 199, 255);
   background-color: black;
   font-family: monospace;
 }
 #textInBox {
+  text-align: center;
   position: relative;
   top: -10px;
-  text-align: center;
 }
 #usersName {
-  position: relative;
-  top: -10px;
   font-size: 20px;
   background-color: rgb(121, 250, 197);
   border: 4px solid rgb(142, 199, 255);
 }
 #labelUsersName {
   position: relative;
-  top: -10px;
   font-size: 25px;
   font-family: monospace;
   background-color: rgb(121, 250, 197);
   border: 4px solid rgb(142, 199, 255);
 }
 #hiToUser {
-  background-color: black;
-  position: absolute;
-  text-align: center;
   display: none;
   color: rgb(142, 199, 255);
   font-family: Courier;
   font-size: 60px;
+  font-style: italic;
+}
+#inner {
+  font-size: 30px;
 }
 #welcomeUser {
-  background-color: black;
-  position: absolute;
   display: none;
   font-family: "Lucida Console", "Courier New", monospace;
   color: rgb(121, 250, 197);

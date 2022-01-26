@@ -26,22 +26,14 @@ function draw() {
   for(var y = 0; y < windowHeight; y = y + sideLen) {
     //iterates in x-direction to create row of squares
     for(var x = 0; x < windowWidth; x = x + sideLen) {
-      var printXEdge = false;
-      if(x + sideLen > windowWidth) { printXEdge = true; }
-
-      var printYEdge = false;
-      if(y + sideLen > windowHeight) { printYEdge = true; }
-
-      if(y != sideLen || x == 0 || printXEdge || printYEdge) { image(faceRisingGif, x, y); }
-
-      // if(tileColor) {
-      //   image(blueTile, x, y);
-      //   tileColor = false;
-      // }
-      // else {
-      //   image(greenTile, x, y);
-      //   tileColor = true;
-      // }
+      // var printXEdge = false;
+      // if(x + sideLen > windowWidth) { printXEdge = true; }
+      //
+      // var printYEdge = false;
+      // if(y + sideLen > windowHeight) { printYEdge = true; }
+      //
+      // if(y != sideLen || x == 0 || printXEdge || printYEdge) { image(faceRisingGif, x, y); }
+       image(faceRisingGif, x, y);
   }
 }
 
