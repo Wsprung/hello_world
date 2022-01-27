@@ -7,7 +7,7 @@ function preload() {
 function setup() {
   //runs once
   //square design, same width and height
-  createCanvas(windowWidth, 2.5 * windowHeight);
+  createCanvas(windowWidth, 1545.796875);
   // createCanvas(windowWidth, windowHeight);
 
   background(0,0,0);
@@ -15,12 +15,12 @@ function setup() {
 
 function draw() {
   background(0,0,0);
-  backgroundGif(windowWidth, windowHeight * 2.5);
+  backgroundGif(windowWidth, 1545.796875);
   //naturally, draw function runs in a loop
 }
 function windowResized() {
   //gif.resize(0, gif.width*(.5));
-  resizeCanvas(windowWidth, 2.5 * windowHeight);
+  resizeCanvas(windowWidth, 1545.796875);
 }
 function backgroundGif(windowWidth, windowHeight) {
   //variable for the number of squares in the grid
