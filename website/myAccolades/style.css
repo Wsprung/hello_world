@@ -28,17 +28,15 @@ canvas {
 }
 #row2 {
   position: relative;
-  top: 39px;
+  top: 38px;
 }
 #row3 {
   position: relative;
-  top: 76px;
+  top: 74px;
 }
-#hhrDescript {
-  display: none;
-}
-#apsDescript {
-  display: none;
+#highHonorRoll {
+  position: relative;
+  top: -6px;
 }
 @keyframes borderChange {
   50% {border-color: rgb(95, 63, 153);}

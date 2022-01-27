@@ -26,6 +26,7 @@ function draw() {
   flowersDescript();
   apsDescript();
   hhrDescript();
+  sipDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, backgroundImg.height * 3.5);
@@ -178,5 +179,22 @@ function hhrDescript() {
   else {
     document.getElementById('hhrDescript').style.display = 'none';
     document.getElementById('awardIcon2').style.display = 'inline';
+  }
+}
+
+function sipDescript() {
+  var sipDescriptBounds = document.getElementById('sipIcon').getBoundingClientRect();
+  var right = sipDescriptBounds.right;
+  var left = sipDescriptBounds.left;
+  var top = sipDescriptBounds.top;
+  var bottom = sipDescriptBounds.bottom;
+  console.log("sip" + right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 385 && mouseX > 3 && mouseY < 1304 && mouseY > 960) {
+    document.getElementById('sipDescript').style.display = 'inline';
+    document.getElementById('sipIcon').style.display = 'none';
+  }
+  else {
+    document.getElementById('sipDescript').style.display = 'none';
+    document.getElementById('sipIcon').style.display = 'inline';
   }
 }
