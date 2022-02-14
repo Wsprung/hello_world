@@ -34,6 +34,11 @@ canvas {
   position: relative;
   top: 74px;
 }
+#row4 {
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
 #highHonorRoll {
   position: relative;
   top: -6px;
