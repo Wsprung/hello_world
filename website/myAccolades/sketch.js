@@ -25,7 +25,7 @@ function draw() {
   reportCardDescript();
   flowersDescript();
   apsDescript();
-  hhrDescript();
+  clDescript();
   sipDescript();
 }
 function windowResized() {
@@ -165,20 +165,20 @@ function apsDescript() {
   }
 }
 
-function hhrDescript() {
-  var hhrDescriptBounds = document.getElementById('awardIcon2').getBoundingClientRect();
-  var right = hhrDescriptBounds.right;
-  var left = hhrDescriptBounds.left;
-  var top = hhrDescriptBounds.top;
-  var bottom = hhrDescriptBounds.bottom;
+function clDescript() {
+  var clDescriptBounds = document.getElementById('cLIcon').getBoundingClientRect();
+  var right = clDescriptBounds.right;
+  var left = clDescriptBounds.left;
+  var top = clDescriptBounds.top;
+  var bottom = clDescriptBounds.bottom;
   // console.log("hhr" + right + "  " + left + "  " + top + "  " + bottom);
   if(mouseX < 1093 && mouseX > 758 && mouseY < 893 && mouseY > 517) {
-    document.getElementById('hhrDescript').style.display = 'inline';
-    document.getElementById('awardIcon2').style.display = 'none';
+    document.getElementById('cLDescript').style.display = 'inline';
+    document.getElementById('cLIcon').style.display = 'none';
   }
   else {
-    document.getElementById('hhrDescript').style.display = 'none';
-    document.getElementById('awardIcon2').style.display = 'inline';
+    document.getElementById('cLDescript').style.display = 'none';
+    document.getElementById('cLIcon').style.display = 'inline';
   }
 }
 
