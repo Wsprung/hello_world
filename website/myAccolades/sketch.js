@@ -27,6 +27,7 @@ function draw() {
   apsDescript();
   clDescript();
   sipDescript();
+  hhrDescript();
 }
 function windowResized() {
   resizeCanvas(windowWidth, backgroundImg.height * 4.1);
@@ -196,5 +197,22 @@ function sipDescript() {
   else {
     document.getElementById('sipDescript').style.display = 'none';
     document.getElementById('sipIcon').style.display = 'inline';
+  }
+}
+
+function hhrDescript() {
+  var hhrDescript = document.getElementById('awardIcon2').getBoundingClientRect();
+  var right = hhrDescript.right;
+  var left = hhrDescript.left;
+  var top = hhrDescript.top;
+  var bottom = hhrDescript.bottom;
+  console.log("hhr" + right + "  " + left + "  " + top + "  " + bottom);
+  if(mouseX < 368 && mouseX > 33 && mouseY < 1731 && mouseY > 1355) {
+    document.getElementById('hhrDescript').style.display = 'inline';
+    document.getElementById('awardIcon2').style.display = 'none';
+  }
+  else {
+    document.getElementById('hhrDescript').style.display = 'none';
+    document.getElementById('awardIcon2').style.display = 'inline';
   }
 }
